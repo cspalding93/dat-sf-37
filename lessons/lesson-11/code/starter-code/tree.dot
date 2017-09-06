@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="recipe <= 0.5\ngini = 0.4996\nsamples = 7383\nvalue = [3592, 3791]"] ;
+1 [label="image_ratio <= 0.3788\ngini = 0.4961\nsamples = 6449\nvalue = [3510, 2939]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="html_ratio <= 0.2706\ngini = 0.4995\nsamples = 5411\nvalue = [2793, 2618]"] ;
+1 -> 2 ;
+3 [label="gini = 0.5\nsamples = 4224\nvalue = [2117, 2107]"] ;
+2 -> 3 ;
+4 [label="gini = 0.4903\nsamples = 1187\nvalue = [676, 511]"] ;
+2 -> 4 ;
+5 [label="html_ratio <= 0.2073\ngini = 0.4272\nsamples = 1038\nvalue = [717, 321]"] ;
+1 -> 5 ;
+6 [label="gini = 0.4681\nsamples = 594\nvalue = [372, 222]"] ;
+5 -> 6 ;
+7 [label="gini = 0.3465\nsamples = 444\nvalue = [345, 99]"] ;
+5 -> 7 ;
+8 [label="html_ratio <= 0.2918\ngini = 0.1602\nsamples = 934\nvalue = [82, 852]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="html_ratio <= 0.1944\ngini = 0.145\nsamples = 877\nvalue = [69, 808]"] ;
+8 -> 9 ;
+10 [label="gini = 0.0659\nsamples = 264\nvalue = [9, 255]"] ;
+9 -> 10 ;
+11 [label="gini = 0.1766\nsamples = 613\nvalue = [60, 553]"] ;
+9 -> 11 ;
+12 [label="image_ratio <= 0.1695\ngini = 0.3521\nsamples = 57\nvalue = [13, 44]"] ;
+8 -> 12 ;
+13 [label="gini = 0.2907\nsamples = 51\nvalue = [9, 42]"] ;
+12 -> 13 ;
+14 [label="gini = 0.4444\nsamples = 6\nvalue = [4, 2]"] ;
+12 -> 14 ;
+}
